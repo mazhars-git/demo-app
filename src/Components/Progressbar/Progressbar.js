@@ -1,6 +1,7 @@
 import React from 'react';
+import '../Css/Progressbar.css';
 
-const Progressbar = () => {
+const ProgressBar = () => {
         const num = document.querySelector(".number");
         let counter = 0;
         setInterval(() => {
@@ -35,4 +36,4 @@ const Progressbar = () => {
     );
 };
 
-export default Progressbar;
+export default ProgressBar;
