@@ -7,7 +7,7 @@
 }
 .progress{
     height: 10px;
-    background: #5454fc;
+    background: #929291;
     border-radius: 15px;
     margin-bottom: 30px;
     overflow: visible;
@@ -42,7 +42,7 @@
     width: 70px;
     height: 35px;
     line-height: 27px;
-    border-radius: 20px;
+    border-radius: 30px;
     background: #fff;
     font-size: 17px;
     font-weight: 600;
@@ -55,6 +55,7 @@
 .progress.blue:before{ border: 7px solid #1a4966; }
 .progress.green:before{ border: 7px solid #53aa2c; }
 .progress.purple:before{ border: 7px solid #66406f; }
+
 .progress.orange .progress-value{
     border: 5px solid #fe3b3b;
     color: #fe3b3b;

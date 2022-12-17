@@ -20,21 +20,15 @@ const PgBar = () => {
                             </div>
                         </div>
                         <h3 class="progress-title">CSS3</h3>
-                        <div class="progress purple">
+                        <div class="progress green">
                             <div class="progress-bar" style={{width:'80%', background:'#1a4966'}}>
                                 <div class="progress-value">80%</div>
                             </div>
                         </div>
                         <h3 class="progress-title">CSS3</h3>
-                        <div class="progress green">
+                        <div class="progress purple">
                             <div class="progress-bar" style={{width:'75%', background:'#1a4966'}}>
                                 <div class="progress-value">75%</div>
-                            </div>
-                        </div>
-                        <h3 class="progress-title">React</h3>
-                        <div class="progress blue">
-                            <div class="progress-bar" style={{width:'90%', background:'#1a4966'}}>
-                                <div class="progress-value">90%</div>
                             </div>
                         </div>
                     </div>
