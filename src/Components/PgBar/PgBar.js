@@ -1,0 +1,29 @@
+import React from 'react';
+import './PgBar.css';
+
+const PgBar = () => {
+    return (
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="progress-title">HTML5</h3>
+                        <div class="progress orange">
+                            <div class="progress-bar" style={{width:'30%', background:'#fe3b3b'}}>
+                                <div class="progress-value">30%</div>
+                            </div>
+                        </div>
+                        <h3 class="progress-title">CSS3</h3>
+                        <div class="progress blue">
+                            <div class="progress-bar" style={{width:'40%', background:'#1a4966'}}>
+                                <div class="progress-value">40%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default PgBar;
