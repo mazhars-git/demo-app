@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Css/Progressbar.css';
+// import '../Css/Progressbar.css';
 
 const ProgressBar = () => {
         const num = document.querySelector(".number");
