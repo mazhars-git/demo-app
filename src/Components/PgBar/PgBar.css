@@ -23,7 +23,6 @@
     position: absolute;
     top: -5px;
     left: 0;
-    z-index: 1;
 }
 .progress:after{
     border: 7px solid #e9e9ea;
@@ -49,7 +48,6 @@
     position: absolute;
     top: -12px;
     right: 0;
-    z-index: 2;
 }
 .progress.orange:before{ border: 7px solid #fe3b3b; }
 .progress.blue:before{ border: 7px solid #1a4966; }

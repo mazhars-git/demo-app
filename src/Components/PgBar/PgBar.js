@@ -3,7 +3,7 @@ import './PgBar.css';
 
 const PgBar = () => {
     return (
-        <div>
+        
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
@@ -34,7 +34,7 @@ const PgBar = () => {
                     </div>
                 </div>
             </div>
-        </div>
+      
     );
 };
 
