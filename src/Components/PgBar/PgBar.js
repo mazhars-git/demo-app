@@ -4,6 +4,31 @@ import './PgBar.css';
 const PgBar = () => {
     return (
         <>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="progressbar-title">HTML5</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style={{width: "85%", background: "#ed687c"}}>
+                            <span style={{background: '#ed687c'}}>85%</span>
+                        </div>
+                    </div>
+        
+                    <h3 class="progressbar-title">CSS3</h3>
+                    <div class="progress">
+                        <div class="progress-bar" style={{width: "75%", background: "#049dff"}}>
+                            <span style={{background: '#049dff'}}>75%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+        {/* done progress bar----01
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -22,10 +47,16 @@ const PgBar = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+
+
 
      
-            {/* <div className="container">
+            {
+                
+            /* this pg bar not working perfectly.............................
+            
+             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
                         <h3 class="progress-title">HTML5</h3>
