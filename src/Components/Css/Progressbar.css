@@ -1,3 +1,52 @@
+
+
+/*-----progressBar2---*/
+.progress-title{
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+.progress{
+  height: 20px;
+  line-height: 15px;
+  border-radius: 20px;
+  background: #f0f0f0;
+  margin-bottom: 30px;
+  box-shadow: none;
+  overflow: visible;
+}
+.progress .progress-bar{
+  position: relative;
+  border-radius: 20px 0 0 20px;
+  animation: animate-positive 2s;
+}
+.progress .progress-value{
+  display: block;
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 8px;
+}
+@-webkit-keyframes animate-positive{
+  0% { width: 0%; }
+}
+@keyframes animate-positive{
+  0% { width: 0%; }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+
 body {
     justify-content: center;
     align-items: center;
@@ -20,19 +69,19 @@ body {
     width: 500px;
 }
     .chart span {
-        /* You can modify the value below to change the distance between the percentage number and the bar */
+       
         margin-left: 5px;
         color: #fff;
         font-weight: bolder;
     }
 
 .bar {
-    /* You can modify the total time used for the animation here */
+    
     animation: load 3s normal forwards;
-    /* 
+   
     Add a little spice by having a shadow below the bar.
     Feel free to comment out this line below to have an even LITE version :D 
-    */
+  
     box-shadow: 0 10px 40px -10px #fff;
 
     border-radius: 100px;
@@ -46,13 +95,13 @@ body {
         width: 0;
     }
     100% {
-        /* You need to change the percentage below to match the value in the corresponding <span> */
+        /* You need to change the percentage below to match the value in the corresponding <span> 
         width: 88%;
     }
 }
 
 
-/*-------prog bar 2.................---------*/
+/*-------prog bar 2.................---------
 
 
 @import url("https://fonts.googleapis.com/css2?family=Lemonada&display=swap");
@@ -67,7 +116,7 @@ body {
   width: 150px;
   height: 150px;
   /*   box-shadow: -10px -10px 20px #ffffffb2,
-    inset 3px 3px 10px rgba(94, 104, 121, 0.288); */
+    inset 3px 3px 10px rgba(94, 104, 121, 0.288); 
   position: relative;
   border-radius: 50%;
   overflow: hidden;
@@ -134,7 +183,7 @@ svg circle {
   max-height: 0;
   animation: blink 500ms 1.8s forwards;
 }
-/* ///////////bar/////// */
+/* ///////////bar/////// *
 @keyframes bar {
   0% {
     stroke-dashoffset: -800px;
@@ -144,7 +193,7 @@ svg circle {
     stroke-width: 40px;
   }
 }
-/* ///////////blink///////// */
+/* ///////////blink///////// *
 @keyframes blink {
   to {
     opacity: 0;
@@ -153,7 +202,7 @@ svg circle {
     opacity: 1;
   }
 }
-/* ///////////blink///////// */
+/* ///////////blink///////// *
 @keyframes header {
   0% {
     opacity: 0;
@@ -163,7 +212,7 @@ svg circle {
   }
 }
 
-/* ------Start Media Queries Section------- */
+/* ------Start Media Queries Section------- *
 
 @media (max-width: 768px) {
   .container {
@@ -198,4 +247,6 @@ svg circle {
     font-size: 14px;
   }
 }
-/* -------End Media Queries Section-------- */
+/* -------End Media Queries Section-------- *
+
+-- */
