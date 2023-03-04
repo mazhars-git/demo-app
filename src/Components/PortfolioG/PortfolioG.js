@@ -10,12 +10,14 @@ const PortfolioG = () => {
             button.addEventListener('click', (e) =>{
                 e.preventDefault();
                 const filter = e.target.dataset.filter
+                console.log('clicked')
 
                 storeImages.forEach((item) =>{
                     if(filter === 'all'){
                         item.style.display = 'block'
                     }else{
                         if(item.classList.contains(filter)){
+                            console.log(filter)
                             item.style.display = 'block'
                         }else{
                             item.style.display = 'none'
@@ -24,81 +26,79 @@ const PortfolioG = () => {
                 })
             })
         })
-
-        
+                
 
     })();
        
     return (
         <div>
-            <div class="button-group filters-button-group">
-                <button class="button is-checked" data-filter="all">all</button>
-                <button class="button" data-filter="beach">beach</button>
-                <button class="button" data-filter="bird">bird</button>
-                <button class="button" data-filter="boat">boat</button>
-                <button class="button" data-filter="lighthouse">lighthouse</button>
-                <button class="button" data-filter="people">people</button>
-                <button class="button" data-filter="rock">rock</button>
-                <button class="button" data-filter="sea">sea</button>
+            <div className="button-group filters-button-group">
+                <button className="button is-checked" data-filter="all">All</button>
+                <button className="button" data-filter="beach">Beach</button>
+                <button className="button" data-filter="boat">boat</button>
+                <button className="button" data-filter="lighthouse">lighthouse</button>
+                <button className="button" data-filter="people">people</button>
+                <button className="button" data-filter="rock">rock</button>
+                <button className="button" data-filter="sea">sea</button>
             </div>
 
-            <section id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
-                <article class="store-item beach people sea">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/beach1.jpg" class="img-responsive" />
+            <section id="grid-container" className="transitions-enabled fluid masonry js-masonry grid">
+                <article className="store-item beach people sea">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/beach1.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item beach bird">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/bird3.jpg" class="img-responsive" />
+                <article className="store-item beach">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/bird3.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item sea">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/sea2.jpg" class="img-responsive" />
+                <article className="store-item sea">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/sea2.jpg" className="img-responsive" />
                 </article>
-                <article class="beach people rock sea">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/beach2.jpg" class="img-responsive" />
+                <article className="beach people rock sea">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/beach2.jpg" className="img-responsive" />
                 </article>
-                <article class="beach sea">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/beach3.jpg" class="img-responsive" />
+                <article className="beach sea">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/beach3.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item bird">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/bird1.jpg" class="img-responsive" />
+                <article className="store-item bird">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/bird1.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item bird">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/bird2.jpg" class="img-responsive" />
+                <article className="store-item bird">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/bird2.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item sea">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/sea4.jpg" class="img-responsive" />
+                <article className="store-item sea">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/sea4.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item lighthouse rock sea">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/lighthouse1.jpg" class="img-responsive" />
+                <article className="store-item lighthouse rock sea">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/lighthouse1.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item boat">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/boat2.jpg" class="img-responsive" />
+                <article className="store-item boat">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/boat2.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item lighthouse sea">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/lighthouse2.jpg" class="img-responsive" />
+                <article className="store-item lighthouse sea">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/lighthouse2.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item beach people">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/people1.jpg" class="img-responsive" />
+                <article className="store-item beach people">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/people1.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item rock sea">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/rock3.jpg" class="img-responsive" />
+                <article className="store-item rock sea">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/rock3.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item boat lighthouse sea">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/boat1.jpg" class="img-responsive" />
+                <article className="store-item boat lighthouse sea">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/boat1.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item boat sea">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/sea1.jpg" class="img-responsive" />
+                <article className="store-item boat sea">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/sea1.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item rock sea">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/rock2.jpg" class="img-responsive" />
+                <article className="store-item rock sea">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/rock2.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item beach">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/beach4.jpg" class="img-responsive" />
+                <article className="store-item beach">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/beach4.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item rock sea">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/sea3.jpg" class="img-responsive" />
+                <article className="store-item rock sea">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/sea3.jpg" className="img-responsive" />
                 </article>
-                <article class="store-item people rock sea">
-                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/rock1.jpg" class="img-responsive" />
+                <article className="store-item people rock sea">
+                    <img src="https://cdn2.hubspot.net/hub/322787/hubfs/MYCHEFCOM/hackathon/photos-gallery/rock1.jpg" className="img-responsive" />
                 </article>
             </section> 
         </div>

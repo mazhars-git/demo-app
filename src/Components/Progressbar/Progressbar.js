@@ -15,10 +15,10 @@ const ProgressBar = () => {
 
     return(
         <>
-            <div class="container">
-            <h2 class="header">Loading 3D Experience</h2>
+            <div className="container">
+            <h2 className="header">Loading 3D Experience</h2>
             {/* <!--  @  body section start --> */}
-            <div class="bar">
+            <div className="bar">
                 {/* <!--  $  Graphic section start --> */}
                 <svg>
                 <circle cx="50%" cy="50%" r="50%"></circle>
@@ -26,8 +26,8 @@ const ProgressBar = () => {
                 {/* <!--  $  Graphic section End--> */}
 
                 {/* <!--  %  content section start --> */}
-                <h1 class="number">0%</h1>
-                <h4 class="config">Loading Robot</h4>
+                <h1 className="number">0%</h1>
+                <h4 className="config">Loading Robot</h4>
                 {/* <!-- %   content section End --> */}
             </div>
             {/* <!--  @  body section End--> */}
